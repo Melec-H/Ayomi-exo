@@ -1,0 +1,48 @@
+<head>
+	<style> 
+	.melec {color: white; border: none}
+	.melec:hover{color: #f19325;} 
+	button:hover{color: #f19325;}
+
+
+	</style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	
+	
+
+</head>
+<body>
+	<div class="jumbotron" style="height:40%;">
+ 		<div class="container text-center">
+    		<div class="container">
+				
+					<h2>Vous pouvez changer votre adresse mail</h2>
+					<form method="post">
+						{% csrf_token %}
+						{{ form.as_p }}
+						<button type="submit" style="font-family: 'Poppins', sans-serif;">Enregistrer la modification</button>
+					</form>
+				
+			</div>
+
+  		</div>
+	</div>
+
+	<div class="container-fluid" style="height:40%; background-color: #f19325;">
+	</div>
+
+	<footer class="container-fluid text-center" style="height:20%;
+	background-color: #281e1d"> 
+			<br>
+			<p><a class="melec" href="https://www.linkedin.com/in/melec-du-halgouet-174a6a150/"
+		style="position: relative; top: 25%; font-family: 'Poppins', sans-serif;"> CONTACTER MELEC SUR LINKEDIN</a>	</p>
+			<p><a class="melec" href="https://ayomi.fr/"
+		style="position: relative; top: 25%; font-family: 'Poppins', sans-serif; font-size: 20px;">Ayomi</a>	</p>
+	</footer>
+</body>
+
+
+
+

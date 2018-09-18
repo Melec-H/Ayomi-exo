@@ -1,0 +1,42 @@
+<head>
+	<style> 
+	.melec {color: white; border: none}
+	.melec:hover{color: #f19325;} 
+	</style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body>
+	<div class="jumbotron" style="height:60%;">
+ 		<div class="container text-center">
+    		  
+	    	<div class="container">
+				<h1>Bienvenue sur votre profile</h1>
+				<h2>voici vos informations personnelles</h2>
+				<p>Username: {{ user.first_name }}</p>
+				<p>First name: {{ user.first_name }}</p>
+				<p>Last name: {{ user.last_name }}</p>
+				<p>Email: {{ user.email }}</p>
+			</div>   
+    	<a href="/profile/edit/" type="button" class="btn btn-warning">Modifier votre email</a> 
+  		</div>
+	</div>
+
+	<div class="container-fluid" style="height:20%; background-color: #f19325;">
+	</div>
+
+	<footer class="container-fluid text-center" style="height:20%;
+	background-color: #281e1d"> 
+			<br>
+			<p><a class="melec" href="https://www.linkedin.com/in/melec-du-halgouet-174a6a150/"
+		style="position: relative; top: 25%; font-family: 'Poppins', sans-serif;"> CONTACTER MELEC SUR LINKEDIN</a>	</p>
+			<p><a class="melec" href="https://ayomi.fr/"
+		style="position: relative; top: 25%; font-family: 'Poppins', sans-serif; font-size: 20px;">Ayomi</a>	</p>
+	</footer>
+</body>
+
+
+
+
